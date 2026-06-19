@@ -21,3 +21,36 @@ thyristor-analyzer/
  - calculator.py            # Theoretical calculations and measurement validation
  - harmonics.py             # FFT-based harmonic spectrum analysis and plot generation
  - README.md                # This file
+
+## Requirements
+
+Python 3.x is required. Install dependencies with:
+
+pip install numpy matplotlib openpyxl
+
+The `math` module is part of the Python standard library and requires no installation.
+
+## How to use
+
+1. Clone the repository:
+   git clone https://github.com/sofiamonty/thyristor-analyzer.git
+
+2. Navigate to the project folder:
+   cd thyristor-analyzer
+
+3. Install the required libraries:
+   pip install numpy matplotlib openpyxl
+
+4. Run the main script:
+   python thyristor_evaluator.py
+
+5. Follow the on-screen prompts:
+   - Enter a firing angle in degrees (0°–180°)
+   - Enter your measured DC output voltage and current
+   - The program will validate your measurements against theoretical values
+   - Repeat for each firing angle you wish to analyse
+
+6. Once all angles are entered, the program will:
+   - Display a full results summary table
+   - Export results to a CSV file
+   - Generate a harmonic spectrum plot for each firing angle
