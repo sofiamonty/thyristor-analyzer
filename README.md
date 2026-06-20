@@ -54,3 +54,22 @@ The `math` module is part of the Python standard library and requires no install
    - Display a full results summary table
    - Export results to a CSV file
    - Generate a harmonic spectrum plot for each firing angle
+
+## Background and motivation
+
+This project originated as a laboratory experiment in EMI analysis of a 
+single-phase full-wave thyristor bridge rectifier. The original goal was 
+to measure and characterise electromagnetic interference using standard 
+lab equipment.
+
+When persistent hardware failures made the EMI measurements impossible, 
+the scope was restructured rather than abandoned. Voltage and current data 
+were collected manually across seven firing angles (0°, 30°, 60°, 90°, 
+120°, 150°, 180°), and a Python-based analysis tool was developed from 
+scratch to extract meaningful power quality information from the results.
+
+The decision to pivot from hardware measurement to software-based harmonic 
+characterisation turned an equipment problem into a more complete analysis 
+than the original experiment would have produced — covering theoretical 
+validation, measurement comparison, and full harmonic spectrum analysis up 
+to the 20th harmonic.
